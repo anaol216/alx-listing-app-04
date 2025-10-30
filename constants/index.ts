@@ -17,6 +17,7 @@ export const FILTER_OPTIONS = [
 
 export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
   {
+    id: "1",
     name: "Villa Ocean Breeze",
     address: {
       state: "Seminyak",

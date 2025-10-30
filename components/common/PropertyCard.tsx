@@ -1,15 +1,23 @@
 import React from "react";
 import { PropertyProps } from "@/interfaces";
 
-const PropertyCard: React.FC<PropertyProps> = ({ 
-  name, 
-  address, 
-  rating, 
-  price, 
-  image, 
-  discount,
-  offers 
-}) => {
+interface CardProps {
+  property: PropertyProps;
+}
+
+const PropertyCard: React.FC<CardProps> = ({ property }) => {
+  const { 
+    id,
+    name, 
+    address, 
+    rating, 
+    price, 
+    image, 
+    discount,
+    offers 
+  } = property;
+
+
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
       <div className="relative">

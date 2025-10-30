@@ -19,6 +19,9 @@ export default function Home() {
         setLoading(false);
       }
     }
+
+    fetchProperties();
+
   },[]);
 
   if (loading) {
